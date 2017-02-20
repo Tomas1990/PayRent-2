@@ -1,0 +1,236 @@
+@import url(../fonts/fonts.css);
+@import url(media.css);
+
+.margin-0 {
+    margin: 0;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.col6{
+    width: 6%;
+    display: inline-block;
+}
+
+.col13{
+    width: 13%;
+    display: inline-block;
+}
+
+.padding-top-20{
+    padding-top: 20px;
+}
+
+section.navbar{
+    background: url("../img/navbar-background.jpg");
+    background-size: 100%;
+    height: 63px;
+}
+
+section.navbar > ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+section.navbar > ul > li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+section.navbar > ul > li > a {
+    color: #FED9B0;
+    font: 12px/14px "MuseoSans500";
+    text-decoration: none;
+}
+
+section.navbar > ul > li > a:hover {
+    color: #FF654F;
+    transition: 0.2s;
+}
+
+
+
+
+
+
+
+.navbar-font{
+
+}
+
+.navbar-default {
+    background: url("../img/navbar-background.jpg") top center;
+}
+
+/* CSS стили для мобильных устройств */
+/* Цвет рамки у кнопки, которая открывает меню */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+/* Цвет полосочек в кнопочке, которая открывает меню */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #f05125;
+}
+
+@media (max-width: 767px) {
+    /* Цвет пунктов меню в раскрывающихся списках */
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #514c42;
+    }
+    /* Цвет и фон пункта меню в раскрывающихся списках, при поднесении к нему курсора мышки или при нахождении его в фокусе */
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #f3744a;
+        background-color: transparent;
+    }
+}
+
+.main-title {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    background: #ffffff;
+}
+
+.main-title > h1{
+    font: 36px/43px "MuseoSans700";
+    color: #f05125;
+}
+
+.main-title:before, .main-title:after {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:10px 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:10px 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:150px / 30px;
+}
+
+.main-title:before {
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+    -moz-transform:skew(8deg) rotate(3deg);
+    -ms-transform:skew(8deg) rotate(3deg);
+    -o-transform:skew(8deg) rotate(3deg);
+    transform:skew(8deg) rotate(3deg);
+}
+
+.slider > img{
+    width: 100%;
+}
+
+.slider > .slider-nav {
+    margin-top: -20%;
+}
+
+.slider > .slider-nav > .slide-left > a > .glyphicon-menu-left {
+    background-color: rgba(243,116,73,0.7);
+    font-size: 35px;
+    color: #fff;
+}
+
+.slider > .slider-nav > .slide-left > a > .glyphicon-menu-left:hover {
+    color: #000;
+}
+
+.slider > .slider-nav > .slide-right > a > .glyphicon-menu-right {
+    background-color: rgba(243,116,73,0.7);
+    font-size: 35px;
+    color: #fff;
+}
+
+.slider > .slider-nav > .slide-right > a > .glyphicon-menu-right:hover {
+    color: #000;
+}
+
+.slider > .orange-mask {
+    width: 100%;
+    height: 20%;
+    background-color: rgba(248,155,28,0.7);
+}
+
+.slider > .orange-mask > .slider-text {
+    font: 30px/36px "MuseoSans300";
+    color: #fff;
+    text-shadow: 4px 4px 2px rgba(248, 155, 28, 1);
+    padding-bottom: 20%;
+}
+
+.picture-text{
+    font: 20px/24px "MuseoSans300";
+    color: #000;
+}
+
+.picture{
+
+}
+
+.main-text{
+    font: 22px/26px "MuseoSans300";
+    color: #666A67;
+}
+
+.container{
+    padding-bottom: 200px;
+}
+
+.menu > .col-md-2 > ul {
+    list-style-type: none;
+}
+
+.facebook, .twitter, .rp, .google, .message{
+    height: 74px;
+    width: 74px;
+    background: url("../img/social/sprite.png");
+    display: inline-block;
+}
+
+.facebook{
+    background-position: 74px 0px;
+}
+
+.facebook:hover{
+    background-position: 74px 74px;
+}
+
+.twitter{
+    background-position: 0px 0px;
+}
+
+.twitter:hover{
+    background-position: 0px 74px;
+}
+
+.rp{
+    background-position: 294px 0px;
+}
+
+.rp:hover{
+    background-position: 294px 74px;
+}
+
+.google{
+    background-position: 147px 0px;
+}
+
+.google:hover{
+    background-position: 147px 74px;
+}
+
+.message{
+    background-position: 220px 0px;
+}
+
+.message:hover{
+    background-position: 220px 74px;
+}
