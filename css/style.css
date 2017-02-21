@@ -1,27 +1,8 @@
 @import url(../fonts/fonts.css);
 @import url(media.css);
+@import url(variables.css);
 
-.margin-0 {
-    margin: 0;
-}
 
-.uppercase{
-    text-transform: uppercase;
-}
-
-.col6{
-    width: 6%;
-    display: inline-block;
-}
-
-.col13{
-    width: 13%;
-    display: inline-block;
-}
-
-.padding-top-20{
-    padding-top: 20px;
-}
 
 section.navbar{
     background: url("../img/navbar-background.jpg");
@@ -50,72 +31,46 @@ section.navbar > ul > li > a:hover {
     transition: 0.2s;
 }
 
-
-
-
-
-
-
-.navbar-font{
-
+section.title {
+    padding-bottom: 17px;
 }
 
-.navbar-default {
-    background: url("../img/navbar-background.jpg") top center;
-}
-
-/* CSS стили для мобильных устройств */
-/* Цвет рамки у кнопки, которая открывает меню */
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-}
-
-/* Цвет полосочек в кнопочке, которая открывает меню */
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #f05125;
-}
-
-@media (max-width: 767px) {
-    /* Цвет пунктов меню в раскрывающихся списках */
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #514c42;
-    }
-    /* Цвет и фон пункта меню в раскрывающихся списках, при поднесении к нему курсора мышки или при нахождении его в фокусе */
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #f3744a;
-        background-color: transparent;
-    }
-}
-
-.main-title {
+section.title > .main-title {
     margin: 0 auto;
     width: 80%;
     position: relative;
     background: #ffffff;
 }
 
-.main-title > h1{
+section.title > .main-title > h1 > a{
     font: 36px/43px "MuseoSans700";
     color: #f05125;
+    text-decoration: none;
 }
 
-.main-title:before, .main-title:after {
+section.title > .main-title:before, .main-title:after {
     content:"";
     position:absolute;
     z-index:-1;
-    -webkit-box-shadow:10px 0 20px rgba(0,0,0,0.8);
-    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
-    box-shadow:10px 0 20px rgba(0,0,0,0.8);
+    -webkit-box-shadow:1px 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:1px 0 20px rgba(0,0,0,0.8);
+    box-shadow:1px 0 20px rgba(0,0,0,0.8);
     top:50%;
     bottom:0;
     left:10px;
     right:10px;
-    -moz-border-radius:100px / 10px;
-    border-radius:150px / 30px;
+    -moz-border-radius:1500px / 100px;
+    border-radius: 1500px / 100px;
 }
 
-.main-title:before {
+section.title > .main-title:after{
+    height: 25px;
+    width: 90%;
+    margin: 5px auto;
+    position: absolute;
+}
+
+section.title > .main-title:before {
     right:10px;
     left:auto;
     -webkit-transform:skew(8deg) rotate(3deg);
@@ -125,21 +80,25 @@ section.navbar > ul > li > a:hover {
     transform:skew(8deg) rotate(3deg);
 }
 
-.slider > img{
+section.slider{
+    background: url("../img/picture-main.jpg") top center no-repeat;
+    background-size: cover;
     width: 100%;
 }
 
-.slider > .slider-nav {
-    margin-top: -20%;
+section.slider > .slider-nav {
+    vertical-align: middle;
 }
 
-.slider > .slider-nav > .slide-left > a > .glyphicon-menu-left {
+section.slider > .slider-nav > .slide-left > a{
     background-color: rgba(243,116,73,0.7);
     font-size: 35px;
     color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
 }
 
-.slider > .slider-nav > .slide-left > a > .glyphicon-menu-left:hover {
+section.slider > .slider-nav > .slide-left > a:hover {
     color: #000;
 }
 
@@ -191,7 +150,7 @@ section.navbar > ul > li > a:hover {
 .facebook, .twitter, .rp, .google, .message{
     height: 74px;
     width: 74px;
-    background: url("../img/social/sprite.png");
+    background: url("../img/sprite.png");
     display: inline-block;
 }
 
