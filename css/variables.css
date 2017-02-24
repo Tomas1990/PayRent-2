@@ -9,9 +9,12 @@
     margin: 0;
 }
 
+.wrapper {
+    padding: 0 10%;
+}
 
-.text-left{
-    text-align: left;
+.text-top{
+    vertical-align: top;
 }
 .text-right{
     text-align: right;
@@ -19,6 +22,7 @@
 .text-center{
     text-align: center;
 }
+
 
 
 .uppercase{
@@ -35,8 +39,23 @@
     display: inline-block;
 }
 
+.col17{
+    width: 17%;
+    display: inline-block;
+}
+
+.col10{
+    width: 10%;
+    display: inline-block;
+}
+
 .col33{
     width: 33%;
+    display: inline-block;
+}
+
+.col40{
+    width: 40%;
     display: inline-block;
 }
 
