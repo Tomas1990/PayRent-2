@@ -1,0 +1,32 @@
+section.menu{
+    background: linear-gradient(to right, #eadbb9, #fffffe);
+}
+
+section.menu > .wrapper > .col17 > ul {
+    list-style-type: none;
+    font: 13px/25px "MuseoSans500";
+}
+
+section.menu > .wrapper > .col17 > ul > li > a{
+    color: #524E45;
+    text-decoration: none;
+}
+
+section.menu > .wrapper > .col17 > ul > li > a:hover{
+    color: #f05125;
+}
+
+section.menu > .wrapper > .col33 > h6{
+    font: 13px/25px "MuseoSans500";
+    color: #524E45;
+}
+
+section.menu > .wrapper > .col33 > p{
+    font: 13px/25px "MuseoSans300";
+    color: #524E45;
+}
+
+section.menu > .wrapper > .col17 > h6{
+    font: 13px/25px "MuseoSans500";
+    color: #524E45;
+}

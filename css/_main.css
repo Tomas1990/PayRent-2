@@ -1,0 +1,41 @@
+section.main {
+    background: #faf7f0;
+    position: relative;
+}
+
+section.main > .wrapper > .main-text{
+    font: 22px/26px "MuseoSans300";
+    color: #666A67;
+}
+
+section.main > .wrapper > .text-1{
+    padding: 50px 0 25px 0;
+}
+
+section.main > .wrapper > .text-2{
+    padding: 25px 0 50px 0;
+}
+
+section.main > .wrapper > .houses{
+    padding-bottom: 250px;
+}
+
+section.main > .wrapper > .houses > .col33 > a > img:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+section.main > .wrapper > .houses > .col33 > a > img:not(:hover){
+    transform: scale(1);
+    transition: 1s;
+}
+
+section.main > .wrapper > .houses > .col33 > a{
+    font: 20px/24px "MuseoSans300";
+    color: #000;
+    text-decoration: none;
+}
+
+section.main > .wrapper > .houses > .col33 > a:hover{
+    color: #f05125;
+}

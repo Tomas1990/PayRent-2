@@ -1,0 +1,64 @@
+footer{
+    margin-top: 5px;
+    background: linear-gradient(to right, #dcdcd7, #d3ac8b);
+    height: 85px;
+}
+
+footer > .wrapper > .col50 > p{
+    font: 13px/25px "MuseoSans300";
+}
+
+footer > .wrapper > .icons{
+    padding-top: 5px;
+}
+
+.facebook, .twitter, .rp, .google, .message{
+    height: 50px;
+    width: 50px;
+    background: url("../img/sprite.png");
+    display: inline-block;
+}
+
+.facebook{
+    background-position: 50px 0px;
+}
+
+.facebook:hover{
+    background-position: 50px 50px;
+}
+
+.twitter{
+    background-position: 0px 0px;
+}
+
+.twitter:hover{
+    background-position: 0px 50px;
+}
+
+.rp{
+    background-position: 200px 0px;
+}
+
+.rp:hover{
+    background-position: 200px 50px;
+}
+
+.google{
+    background-position: 100px 0px;
+}
+
+.google:hover{
+    background-position: 100px 50px;
+}
+
+.message{
+    background-position: 150px 0px;
+}
+
+.message:hover{
+    background-position: 150px 50px;
+}
+
+.invalid, .home{
+    display: inline-block;
+}

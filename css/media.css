@@ -50,8 +50,23 @@
 }
 
 @media (max-width: 811px) {
+    .text-footer{
+        display: none;
+    }
+
+    .col60{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 486px) {
     .icons{
-        zoom: 0.5;
-        padding-top: 5% !important;
+        zoom: 0.75;
+    }
+    section.burger{
+        display: inline-block;
+    }
+    section.navbar{
+        display: none;
     }
 }
