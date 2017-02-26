@@ -1,84 +1,13 @@
 @import url(../fonts/fonts.css);
+@import url(_navbar.css);
+@import url(_title.css);
 @import url(variables.css);
 @import url(media.css);
 
 
 
-section.navbar{
-    background: url("../img/navbar-background.jpg");
-    background-size: 100%;
-    height: 63px;
-}
 
-section.navbar > ul {
-    display: inline-block;
-    list-style-type: none;
-}
 
-section.navbar > ul > li {
-    display: inline-block;
-    padding: 0 5px;
-}
-
-section.navbar > ul > li > a {
-    color: #FED9B0;
-    font: 12px/14px "MuseoSans500";
-    text-decoration: none;
-}
-
-section.navbar > ul > li > a:hover {
-    color: #FF654F;
-    transition: 0.2s;
-}
-
-section.title {
-    padding-bottom: 17px;
-}
-
-section.title > .main-title {
-    margin: 0 auto;
-    width: 80%;
-    position: relative;
-    background: #ffffff;
-}
-
-section.title > .main-title > h1 > a{
-    font: 36px/43px "MuseoSans700";
-    color: #f05125;
-    text-decoration: none;
-}
-
-section.title > .main-title:before, .main-title:after {
-    content:"";
-    position:absolute;
-    z-index:-1;
-    -webkit-box-shadow:1px 0 20px rgba(0,0,0,0.8);
-    -moz-box-shadow:1px 0 20px rgba(0,0,0,0.8);
-    box-shadow:1px 0 20px rgba(0,0,0,0.8);
-    top:50%;
-    bottom:0;
-    left:10px;
-    right:10px;
-    -moz-border-radius:1500px / 100px;
-    border-radius: 1500px / 100px;
-}
-
-section.title > .main-title:after{
-    height: 25px;
-    width: 90%;
-    margin: 5px auto;
-    position: absolute;
-}
-
-section.title > .main-title:before {
-    right:10px;
-    left:auto;
-    -webkit-transform:skew(8deg) rotate(3deg);
-    -moz-transform:skew(8deg) rotate(3deg);
-    -ms-transform:skew(8deg) rotate(3deg);
-    -o-transform:skew(8deg) rotate(3deg);
-    transform:skew(8deg) rotate(3deg);
-}
 
 section.slider{
     background: url("../img/picture-main.jpg") top center no-repeat;
@@ -86,7 +15,7 @@ section.slider{
 }
 
 section.slider > .slider-nav {
-    padding: 175px 0;
+    padding: 172px 0;
 }
 
 section.slider > .slider-nav > .slide-left > a{
@@ -129,6 +58,7 @@ section.slider > .overlay >  .wrapper > p {
 
 section.main {
     background: #faf7f0;
+    position: relative;
 }
 
 section.main > .wrapper > .main-text{
@@ -148,8 +78,14 @@ section.main > .wrapper > .houses{
     padding-bottom: 250px;
 }
 
-section.main > .wrapper > .houses > .col33 > a > img{
- /*ТЕНИ*/
+section.main > .wrapper > .houses > .col33 > a > img:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+section.main > .wrapper > .houses > .col33 > a > img:not(:hover){
+    transform: scale(1);
+    transition: 1s;
 }
 
 section.main > .wrapper > .houses > .col33 > a{
@@ -204,7 +140,7 @@ footer > .wrapper > .col50 > p{
     font: 13px/25px "MuseoSans300";
 }
 
-footer > .wrapper > .col40 > .icons{
+footer > .wrapper > .icons{
     padding-top: 5px;
 }
 

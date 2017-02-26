@@ -1,0 +1,48 @@
+section.title {
+    padding-bottom: 17px;
+}
+
+section.title > .main-title {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    background: #ffffff;
+}
+
+section.title > .main-title > h1 > a{
+    font: 36px/43px "MuseoSans700";
+    color: #f05125;
+    text-decoration: none;
+}
+
+section.title > .main-title:before, .main-title:after {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:1px 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:1px 0 20px rgba(0,0,0,0.8);
+    box-shadow:1px 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:1500px / 100px;
+    border-radius: 1500px / 100px;
+}
+
+section.title > .main-title:after{
+    height: 25px;
+    width: 90%;
+    margin: 5px auto;
+    position: absolute;
+}
+
+section.title > .main-title:before {
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+    -moz-transform:skew(8deg) rotate(3deg);
+    -ms-transform:skew(8deg) rotate(3deg);
+    -o-transform:skew(8deg) rotate(3deg);
+    transform:skew(8deg) rotate(3deg);
+}

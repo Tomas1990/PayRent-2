@@ -16,6 +16,9 @@
 .text-top{
     vertical-align: top;
 }
+.text-middle{
+    vertical-align: middle;
+}
 .text-right{
     text-align: right;
 }
@@ -34,6 +37,12 @@
     width: 6%;
     display: inline-block;
 }
+
+.col10{
+    width: 10%;
+    display: inline-block;
+}
+
 .col13{
     width: 13%;
     display: inline-block;
@@ -41,11 +50,6 @@
 
 .col17{
     width: 17%;
-    display: inline-block;
-}
-
-.col10{
-    width: 10%;
     display: inline-block;
 }
 
@@ -59,6 +63,20 @@
     display: inline-block;
 }
 
+.col60{
+    width: 60%;
+    display: inline-block;
+}
+
 .padding-top-20{
     padding-top: 20px;
+}
+
+.padding-bottom-20{
+    padding-bottom: 20px;
+}
+
+.padding-2{
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
