@@ -14,14 +14,14 @@
 }
 
 @media (max-width: 613px) {
-    .navbar > ul > li > a{
-        font-size: 6px !important;
+    .icons{
+        zoom: 0.75;
     }
-}
-
-@media (max-width: 444px) {
-    .navbar > ul > li > a{
-        font-size: 4px !important;
+    section.burger{
+        display: block !important;
+    }
+    section.navbar{
+        display: none;
     }
 }
 
@@ -56,17 +56,5 @@
 
     .col60{
         width: 100% !important;
-    }
-}
-
-@media (max-width: 486px) {
-    .icons{
-        zoom: 0.75;
-    }
-    section.burger{
-        display: inline-block;
-    }
-    section.navbar{
-        display: none;
     }
 }
