@@ -1,5 +1,4 @@
 @import url(../fonts/fonts.css);
-@import url(_burger.css);
 @import url(_navbar.css);
 @import url(_title.css);
 @import url(_slider.css);
@@ -8,3 +7,4 @@
 @import url(_footer.css);
 @import url(variables.css);
 @import url(media.css);
+@import url(_burger.css);

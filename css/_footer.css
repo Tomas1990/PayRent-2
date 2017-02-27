@@ -1,6 +1,8 @@
 footer{
     margin-top: 5px;
+    background: #dcdcd7;
     background: linear-gradient(to right, #dcdcd7, #d3ac8b);
+    background: -webkit-linear-gradient(to right, #dcdcd7, #d3ac8b);
     height: 85px;
 }
 
